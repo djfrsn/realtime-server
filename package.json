@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/djfrsn/realtime-server/issues"
   },
-  "homepage": "https://github.com/djfrsn/realtime-server#readme"
+  "homepage": "https://github.com/djfrsn/realtime-server#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
 }
