@@ -5,7 +5,9 @@ import fetch from 'isomorphic-fetch';
 class HomePage extends Component {
   // fetch old messages data from the server
   static async getInitialProps({ req }) {
-    const response = await fetch('http://localhost:3000/messages');
+    const response = await fetch(
+      'https://next-socket-io-hayfflyjwo.now.sh/messages'
+    );
     const messages = await response.json();
     return { messages };
   }
@@ -22,7 +24,7 @@ class HomePage extends Component {
 
   // connect to WS server and listen event
   componentDidMount() {
-    this.socket = io('http://localhost:3000/');
+    this.socket = io('https://next-socket-io-hayfflyjwo.now.sh/');
     this.socket.on('message', this.handleMessage);
   }
 
