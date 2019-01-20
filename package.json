@@ -1,0 +1,19 @@
+{
+  "name": "realtime-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djfrsn/realtime-server.git"
+  },
+  "author": "Dennis Jefferson <me@dennisjefferson.com> (dennisjefferson.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djfrsn/realtime-server/issues"
+  },
+  "homepage": "https://github.com/djfrsn/realtime-server#readme"
+}
