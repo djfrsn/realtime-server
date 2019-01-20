@@ -24,7 +24,7 @@ class HomePage extends Component {
 
   // connect to WS server and listen event
   componentDidMount() {
-    this.socket = io('https://next-socket-io-hayfflyjwo.now.sh/');
+    this.socket = io('https://next-socket-io-hayfflyjwo.now.sh');
     this.socket.on('message', this.handleMessage);
   }
 
@@ -36,6 +36,8 @@ class HomePage extends Component {
 
   // add messages from server to the state
   handleMessage = message => {
+    console.log('message', message);
+
     this.setState(state => ({ messages: state.messages.concat(message) }));
   };
 
